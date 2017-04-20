@@ -13,15 +13,16 @@ catch(PDOException $e)
 	echo $error->getMessage();
 	}
 $conn = null;
- ?>
 
+ ?>
  <!DOCTYPE html>
  <html>
  <head>
  	<title></title>
  </head>
  <body>
- 		<?php foreach ($all as $value) { ?>
+ <h2>TODO_LIST_TABLE</h2>
+ 	<?php foreach ($all as $value) { ?>
 		<p>
 			STT: <?php echo $value['id']; ?>
 			CONG VIEC:  <?php echo $value["work"]; ?>
@@ -31,8 +32,5 @@ $conn = null;
 			<a href=<?php echo "./index.php?id=" . $value['id'] . "&work=" . $value['work'] . "&date_begin=" . $value['date_begin'] . "&total_hour=" . $value['total_hour']; ?>>EDIT</a>
 		</p>
 	<?php }; ?>
-
-
-
  </body>
  </html>

@@ -22,4 +22,5 @@ catch (Exception $erorr)
 	{
     echo $sql . "<br>" .  $erorr->getMessage();
 	}
+$conn = null;	
  ?>

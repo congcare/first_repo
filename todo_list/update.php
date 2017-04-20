@@ -10,8 +10,7 @@ try {
 	$statement->bindParam(':viec',$viec);
 	$statement->bindParam(':ngay',$ngay);
 	$statement->bindParam(':thoigian',$thoigian);
-	$statement->execute();
-	
+	$statement->execute();	
 	}
 catch(PDOException $e) 
 	{
@@ -21,4 +20,5 @@ catch(Exception $error)
 	{
 	echo $error->getMessage();
 	}
+$conn = null;
  ?>

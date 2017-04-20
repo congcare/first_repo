@@ -7,7 +7,8 @@
 	<input type="text" name="total_hour" id="lh"><br>
 	<button type="submit"> ADD</button>
 </form>
-<a href="select.php">XEM TOAN BO</a><br>
+
+<a href="select.php">XEM TOAN BO</a><br><br><br>
 
 
 <form method="POST" action=<?php echo "./update.php?id=" . $_GET['id']?>>
