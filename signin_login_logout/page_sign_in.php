@@ -7,10 +7,6 @@
 	</style>
 </head>
 <body>
-
-
-
-
 <h2>DANG KY</h2>
 <form method="post" action="validate.php">
 	USERNAME: 

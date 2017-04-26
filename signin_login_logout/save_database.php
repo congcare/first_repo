@@ -1,5 +1,5 @@
 <?php 
-require("./connection.php");
+// require("./connection.php");
 
 try {
 	$userName = $_POST["username"];
@@ -12,14 +12,14 @@ try {
 	$statement->bindParam(':email', $email);
 	$statement->execute();
 	echo "signed in";
-	} 
-catch(PDOException $e) 
-	{
+} 
+catch(PDOException $e) {
 	echo $e->getMessage();
-	}
-catch (Exception $erorr) 
-	{
+}
+catch (Exception $erorr) {
     echo $sql . "<br>" .  $erorr->getMessage();
-	}
+}
 $conn = null;
+
 ?>
+<a href="index.php">VE HOME DANG NHAP</a>;
